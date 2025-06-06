@@ -1,0 +1,261 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #e0e0e0; /* Lighter, professional background */
+  color: #333; /* Dark grey for text */
+  line-height: 1.6; /* Improve readability */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f51b5; /* Primary color */
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.8rem; /* Slightly larger heading */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* More space between links */
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+  color: #ffeb3b; /* Accent color on hover */
+}
+
+.hero {
+  background: linear-gradient(to right, #3f51b5, #5c6bc0); /* Gradient using primary and a lighter shade */
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem; /* More vertical padding */
+  position: relative; /* Needed for absolute positioning of photo */
+  overflow: hidden; /* Hide anything outside the hero */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.hero .intro {
+  text-align: center;
+  max-width: 800px; /* Limit width for better readability */
+  margin-top: 20px; /* Space below photo if placed inside intro */
+}
+
+.profile-photo {
+  width: 180px; /* Slightly larger photo */
+  height: 180px; /* Slightly larger photo */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.8); /* Thicker, slightly transparent white border */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* More pronounced shadow */
+  position: absolute; /* Position absolutely within .hero */
+  top: 30px; /* Distance from top */
+  left: 30px; /* Distance from left */
+  z-index: 1; /* Ensure it's above other content if needed */
+}
+
+.hero h2 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 0.5rem;
+}
+
+.hero .intro span {
+  color: #ffeb3b; /* Accent color */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Removed old social links styles from hero section */
+
+.section {
+  padding: 3rem 2rem; /* More padding */
+  background: white;
+  margin: 2rem auto; /* Center section with auto margins */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* More pronounced shadow */
+  max-width: 1000px; /* Limit max width for sections */
+}
+
+.section h2 {
+  color: #3f51b5; /* Primary color for headings */
+  font-size: 2rem; /* Slightly larger section headings */
+  border-bottom: 2px solid #ffeb3b; /* Accent color underline */
+  padding-bottom: 10px; /* Space below underline */
+  margin-bottom: 2rem; /* Space below heading */
+}
+
+ul {
+  padding-left: 1.5rem; /* More padding for list items */
+}
+
+ul li {
+  margin-bottom: 1rem; /* Space between list items */
+}
+
+footer {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem; /* Space above footer */
+}
+
+button {
+  margin-top: 20px; /* More space above button */
+  padding: 12px 20px; /* Larger button padding */
+  background-color: #e91e63; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem; /* Slightly larger font */
+  transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #c2185b; /* Darker shade on hover */
+}
+
+/* Gallery styles */
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* More space above gallery */
+  justify-content: center; /* Center gallery images */
+}
+.gallery img {
+  width: 28%;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* More pronounced shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover transition */
+}
+.gallery img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styles for contact details (phone, location, email, social links) */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 15px; /* Space below phone and location */
+}
+
+.contact-links p {
+    margin: 5px 0; /* Space between contact lines */
+    text-align: left; /* Ensure text is left aligned */
+}
+
+.contact-link,
+.contact-social-links a {
+  color: #333; /* Dark grey color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Match font weight */
+  transition: color 0.3s ease-in-out; /* Smooth hover transition */
+  display: inline-flex; /* Align icon and text/icons */
+  align-items: center; /* Vertically align items */
+}
+
+.contact-link i,
+.contact-social-links a i {
+  margin-right: 8px; /* Space between icon and text/link */
+}
+
+.contact-link:hover,
+.contact-social-links a:hover {
+  color: #3f51b5; /* Primary color on hover */
+}
+
+.contact-social-links {
+    margin-top: 10px; /* Space above social links */
+    display: flex; /* Use flexbox to align icons */
+    gap: 15px; /* Space between social icons */
+    justify-content: flex-start; /* Align social icons to the left */
+}
+
+.contact-info {
+    text-align: left; /* Ensure all info text is left aligned */
+}
+
+@media (max-width: 768px) { /* Adjusted breakpoint for tablets */
+  .gallery img {
+    width: 45%; /* Adjust for tablet layout */
+  }
+  .profile-photo {
+      position: static; /* Revert to static positioning on smaller screens */
+      margin-bottom: 20px; /* Add space below photo */
+  }
+  .hero {
+      flex-direction: column; /* Stack items vertically */
+      padding: 4rem 1rem; /* Adjust padding */
+  }
+    .hero .intro {
+        margin-top: 0; /* Adjust margin */
+    }
+    .hero h2 {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+    .hero p {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    nav {
+        flex-direction: column; /* Stack nav items */
+        padding: 1rem;
+        gap: 0.5rem; /* Adjust gap */
+    }
+    nav ul {
+        margin-top: 10px;
+        gap: 1rem; /* Adjust gap */
+    }
+    .section {
+        padding: 2rem 1rem; /* Adjust padding */
+        margin: 1rem auto; /* Adjust margin */
+    }
+    .section h2 {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+    .contact-social-links {
+        justify-content: center; /* Center social icons */
+    }
+}
+
+@media (max-width: 480px) { /* New breakpoint for smaller phones */
+    .gallery img {
+        width: 95%; /* Stack images vertically on small phones */
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .social-links a {
+        font-size: 1.8rem; /* Adjust icon size */
+    }
+    .section h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    .contact-social-links a {
+        font-size: 1.2rem; /* Further reduce icon size */
+    }
+}

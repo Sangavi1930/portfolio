@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sangavi R - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Gallery styles */
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 28%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 48%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Sangavi R</h1>
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="intro">
+      <img src="img.s.png" alt="Sangavi R Profile Photo" class="profile-photo">
+      <h2>Hi, I'm <span>Sangavi R</span></h2>
+      <p>Aspiring Front-End Developer passionate about building interactive digital experiences.</p>
+    </div>
+  </header>
+
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <div class="contact-info">
+      <p>📞 +91 8838491443</p>
+      <p>📍 Mohanur, Namakkal</p>
+      <p> <a href="mailto:sangaviram2004@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> sangaviram2004@gmail.com</a></p>
+      <div class="contact-social-links">
+        <a href="https://github.com/Sangavi1930" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sangavi-r-6bb15425a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="objective" class="section">
+    <h2>🎯 Objective</h2>
+    <p>To work in an environment offering challenging career opportunities where I can apply and enhance my skills for solving diverse technical problems.</p>
+  </section>
+
+  <section id="education" class="section">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>B.Tech IT</strong>, MKCE – 7.8 CGPA</li>
+      <li><strong>HSC</strong>, Kongu Matric Hr. Sec. School – 88.2%</li>
+      <li><strong>SSLC</strong>, Kongu Matric Hr. Sec. School – 87%</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>💻 Projects</h2>
+    <ul>
+      <li><strong>Multilingual & Multi-Modal Translation</strong> – Unified encoder-decoder model for translating any language.</li>
+      <li><strong>Air Pollution Monitoring System</strong> – Uses AI to detect pollution and predict air quality.</li>
+      <li><strong>Online Voting System</strong> – Secure platform for digital elections.</li>
+    </ul>
+
+    <!-- Projects images gallery -->
+    <div class="gallery projects">
+      <img src="img.m" alt="Project 1" />
+      <img src="img.p.jpeg" alt="Project 2" />
+      <img src="img.v.jpg" alt="Project 3" />
+    </div>
+  </section>
+
+  <section id="conference" class="section">
+    <h2>🎤 Conference</h2>
+    <p>Presented on "Multilingual & Multi-Modal Translation" at Mount Zion College.</p>
+    <p>Presented on "Online Voting System" at Erode Sengunthar College.</p>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>📜 Certifications</h2>
+    <ul>
+      <li>Japanese N5 – JLPT</li>
+      <li>Industry 4.0 & IIOT – NPTEL</li>
+      <li>Azure Fundamentals – Microsoft</li>
+    </ul>
+
+    <!-- Certificates images gallery -->
+    <div class="gallery certificates">
+      <img src="img.j.png" alt="Japanese N5 Certificate" />
+      <img src="img.n.png" alt="Industry 4.0 Certificate" />
+      <img src="img.a.png" alt="Azure Fundamentals Certificate" />
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python</li>
+      <li><strong>Web:</strong> HTML, CSS</li>
+      <li><strong>Database:</strong> SQL</li>
+      <li><strong>Others:</strong> DBMS, Data Structures</li>
+    </ul>
+  </section>
+
+  <section id="languages" class="section">
+    <h2>🌍 Languages Known</h2>
+    <p>Tamil, English, Japanese</p>
+  </section>
+
+  <footer>
+    <button onclick="scrollToTop()">⬆ Back to Top</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
